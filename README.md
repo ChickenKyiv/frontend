@@ -11,6 +11,16 @@ https://www.youtube.com/watch?v=mZOuQEhuT6Y&t=1s
 https://www.youtube.com/watch?v=nScWVGSTAaI
 
 
+## List of Milestones
+
+- Free menu recipes
+- Weekly menu
+- Grocery List
+- Authentication
+- Payments
+- Search
+- Import recipe
+- Recipe Service Final Release
 
 
 ## Basic users flow(next stages only)
@@ -19,7 +29,7 @@ check BasicFlow.md
 
 ## Notes
 
-We'll start from using Create React App()
+We'll start from using [Create React App](https://github.com/facebook/create-react-app)
 
 If you need more details our guidance about how to work with React - please let me know.
 
@@ -36,12 +46,70 @@ Homepage basic layout will be provided later.
 - We'll use Jest + Enzyme for tests
 - We'll use Netlify in order to have ability review our pages online
 - We'll use Travis CI for setting up tests coverage
-- Send API calls to server. @TODO share with team API endpoints. for making calls use Axious.
+- Send API calls to server. @TODO share with team an API endpoints. for making calls use Axious.
 - For subscription service we'll use Paddle.js
 
 - Each component should looks simple and understandable
 - We should use ReactStrap components for faster development process
 - You should create and maintain documentation
+
+
+## Free Menu Release
+
+free-menu functionality
+You’ll display 5–6 recipes for a week, with additional data.
+Later you’ll use Recipe API server for fetching data
+
+For a first stage - we'll not use connection to API. we'll grab data from json arrays that i'll provide.
+
+Pages:
+
+
+- Login / sign-up
+- Onboarding tour
+- View Menu(recipes list)
+- View Recipe data (Single recipe data)
+   - Recipe information short/extended (limited for different purposes)
+- View settings
+- Profile
+- Simple grocery list form with to-do checkboxes list.
+
+
+#### Weekly Menu Part 1
+- Meal plan types types(allergies free, gluten free, cooking for two, a family with kids(main option))
+- Sample menus (Different types)
+- Complex recipe
+- Complex JSON parsing
+- Grocery list from main JSON file
+- Grocery list template 2 — long scroll-able list with all categories in one page (filter/search will be cool)
+- Grocery list settings & Recipe calendar
+- Weekly menu from main JSON file
+- Intro with images
+- Nutrition facts section for recipe details page
+- Grocery list can automatically calculate same ingredients from one category from different recipes, from different days
+- Servings can be changed in different recipes, different days and this changes might be applied to grocery list
+
+
+#### Grocery List Milestone (a lot of work was done. So we don't need to start from scratch)
+
+Inventory of all shopping lists.
+
+Shopping/grocery
+- Adding items (quantity, additional notes);
+- Sorting items (alphabetically, from newest to oldest and vice versa);
+- Marking items as "complete" or "incomplete”;
+- Deleting items (delete one/all);
+- Moving items (move items to another list, copy items).
+- Suggestions
+- Grocery List sharing
+
+#### Authentication
+- Facebook button
+- Auth with tokens can be handled with help of our Recipe API.
+
+#### Search Milestone
+Partially done in another code repository (Advanced Search Form with API calls)
+@TODO share information later
 
 ## Big functionality topics to cover later
 - Calendar
@@ -65,21 +133,12 @@ Homepage basic layout will be provided later.
 - Import data from Excel File
 - ACL, ACL for users(user cannot edit ingredients, that he don't own)
 
-## List of Milestones
 
-- Free menu recipes
-- Weekly menu
-- Grocery List
-- Authentication
-- Payments
-- Search
-- Import recipe
-- Recipe Service Final Release
 
 
 
 ## Database visuals
-This is a db schema between Free Menu Release and Weekly Menu Release with some
+This is a db schema between Free Menu Release and Weekly Menu Release with tables, related to Search Release
 ![db schema](https://github.com/ChickenKyiv/creative/blob/master/Recipe-ChickenKyiv-Release%231%20Schema%20%20%20SqlDBM.png)
 
 
@@ -87,19 +146,6 @@ This is a db schema between Free Menu Release and Weekly Menu Release with some
 
 
 
-
-#### Grocery List Milestone (a lot of work was done. So we don't need to start from scratch)
-
-Inventory of all shopping lists.
-
-Shopping/grocery
-- Adding items (quantity, additional notes);
-- Sorting items (alphabetically, from newest to oldest and vice versa);
-- Marking items as "complete" or "incomplete”;
-- Deleting items (delete one/all);
-- Moving items (move items to another list, copy items).
-- Suggestions
-- Grocery List sharing
 
 
 

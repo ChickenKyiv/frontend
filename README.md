@@ -2,6 +2,16 @@
 
 this is not completed document, will be updated soon
 
+#### Intro
+CK is a short name for ChickenKyiv Project.
+
+Main Idea to replicate nomoretogo.com & planitdinner.net websites functionality by using newest technologies.
+You can see how this similar project looks on this videos
+https://www.youtube.com/watch?v=mZOuQEhuT6Y&t=1s
+https://www.youtube.com/watch?v=nScWVGSTAaI
+
+
+
 ## Notes
 
 We'll start from using Create React App()
@@ -9,6 +19,70 @@ We'll start from using Create React App()
 If you need more details our guidance about how to work with React - please let me know.
 
 
+## Important Notes
+Use Sentry Releases to ship better code
+Use git flow so we'll not intersect between developers
+Use PR for pushing your code into master and I'll be a reviewer
+Use bin-flow
+For making react components ready for cross-projects we'll use Bit.
+We'll use Jest + Enzyme for tests
+We'll use Netlify in order to have ability review our pages online
+We'll use Travis CI for setting up tests coverage
+Send API calls to server. @TODO share with team API endpoints. for making calls use Axious.
+For subscription service we'll use Paddle.js
+
+Each component should looks simple and understandable
+we should use ReactStrap.
+You should create and maintain documentation
+
+## Big functionality topics to cover
+Calendar
+Weekly menu
+Auth
+Recipe
+Grocery list
+Expenses
+Nutrition
+Food tracking or Food logging
+Search
+Recipe
+Tips
+
+
+Account system(basic user profile section)
+Email Notifications
+Send grocery list to email
+Share your grocery list
+CRUD Departments, Ingredients, Measurements, Recipes, Grocery Lists
+Import data from Excel File
+ACL, ACL for users(user cannot edit ingredients, that he don't own)
+
+## List of Milestones
+
+- Free menu recipes
+- Weekly menu
+- Grocery List
+- Authentication
+- Payments
+- Search
+- Import recipe
+- Recipe Service Final Release
+
+
+
+
+#### Grocery List Milestone (a lot of work was done. So we don't need to start from scratch)
+
+Inventory of all shopping lists.
+
+Shopping/grocery
+- Adding items (quantity, additional notes);
+- Sorting items (alphabetically, from newest to oldest and vice versa);
+- Marking items as "complete" or "incomplete”;
+- Deleting items (delete one/all);
+- Moving items (move items to another list, copy items).
+- Suggestions
+- Grocery List sharing
 
 ## Sitemaps
 
@@ -30,11 +104,3 @@ Also some data you can check at Sitemap-export.pdf file in repository root
 ## Database visuals
 
 ## List of pages
-## Important Notes
-Use Sentry Releases to ship better code
-Use git flow so we'll not intersect between developers
-Use PR for pushing your code into master and I'll be a reviewer
-Use bin-flow
-For making react components ready for cross-projects we'll use Bit.
-
-## List of Milestones

@@ -1,4 +1,16 @@
 
+## Account system
+
+Basic functionality:
+
+Sign up process
+Pick a plan + Billing
+View profile + Billing settings
+Switch subscription plan
+Subscribe / unsubscribe
+
+
+
 Layouts
 - [ ] application - all pages that not a dashboard
 - [ ] dashboard

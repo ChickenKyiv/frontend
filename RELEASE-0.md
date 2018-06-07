@@ -10,7 +10,7 @@
   > Recipe, ingredient, and meal planning apps are all over the place, but none of them bring together everything between recipe picking and meal prep.
 
 ## Solution ##
-  > Chicken Kyiv gives users all the meal planning tools they need in one place. Choose the recipes you want, Meal.next will take care of the rest.
+  > Chicken Kyiv gives users all the meal planning tools they need in one place. Choose the recipes you want, ChickenKyiv will take care of the rest.
 
 ## Quote from You ##
   > "Chicken Kyiv is the best thing since butter, which was the best thing since bread. --Ben"
@@ -22,4 +22,11 @@
   > ""
 
 ## Closing and Call to Action ##
-  > Give up meal planning with pen and paper, multiple, disjointed apps, or memorized lists. 
+  > Give up meal planning with pen and paper, multiple, disjointed apps, or memorized lists.
+
+
+
+Screen with recipes list
+Recipe details
+Basic grocery list
+Login screen.

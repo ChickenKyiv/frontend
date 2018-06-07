@@ -84,6 +84,12 @@ Shopping/grocery
 - Suggestions
 - Grocery List sharing
 
+
+
+#### Account + Subscription Payments
+check account.md
+
+
 ## Sitemaps
 
 ![Simple Subscription Flow](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/099a7735f717498faaa8731f55654fa7.png)

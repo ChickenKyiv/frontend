@@ -1,6 +1,6 @@
-# frontend repo for Chicken Kyiv project.
+# React Frontend repository for ChickenKyiv project.
 
-this is not completed document, will be updated soon
+This is not completed document, will be updated soon
 
 #### Intro
 CK is a short name for ChickenKyiv Project.
@@ -10,9 +10,11 @@ You can see how this similar project looks on this videos
 https://www.youtube.com/watch?v=mZOuQEhuT6Y&t=1s
 https://www.youtube.com/watch?v=nScWVGSTAaI
 
+
+
+
 ## Basic users flow(next stages only)
 check BasicFlow.md
-
 
 
 ## Notes
@@ -26,42 +28,42 @@ Static data, aka json arrays will provided later, so you don't need to create it
 Homepage basic layout will be provided later.
 
 ## Important Notes
-Use Sentry Releases to ship better code
-Use git flow so we'll not intersect between developers
-Use PR for pushing your code into master and I'll be a reviewer
-Use bin-flow
-For making react components ready for cross-projects we'll use Bit.
-We'll use Jest + Enzyme for tests
-We'll use Netlify in order to have ability review our pages online
-We'll use Travis CI for setting up tests coverage
-Send API calls to server. @TODO share with team API endpoints. for making calls use Axious.
-For subscription service we'll use Paddle.js
+- We'll use Sentry Releases to ship better code
+- We'll use git flow so we'll not intersect between developers
+- We'll use PR for pushing your code into master and I'll be a reviewer
+- We'll use bin-flow
+- For making react components ready for cross-projects we'll use Bit.
+- We'll use Jest + Enzyme for tests
+- We'll use Netlify in order to have ability review our pages online
+- We'll use Travis CI for setting up tests coverage
+- Send API calls to server. @TODO share with team API endpoints. for making calls use Axious.
+- For subscription service we'll use Paddle.js
 
-Each component should looks simple and understandable
-we should use ReactStrap.
-You should create and maintain documentation
+- Each component should looks simple and understandable
+- We should use ReactStrap components for faster development process
+- You should create and maintain documentation
 
-## Big functionality topics to cover
-Calendar
-Weekly menu
-Auth
-Recipe
-Grocery list
-Expenses
-Nutrition
-Food tracking or Food logging
-Search
-Recipe
-Tips
+## Big functionality topics to cover later
+- Calendar
+- Weekly menu
+- Auth
+- Recipe
+- Grocery list
+- Expenses
+- Nutrition information
+- Food tracking or Food logging
+- Search
+- Recipe
+- Cooking Tips
 
 
-Account system(basic user profile section)
-Email Notifications
-Send grocery list to email
-Share your grocery list
-CRUD Departments, Ingredients, Measurements, Recipes, Grocery Lists
-Import data from Excel File
-ACL, ACL for users(user cannot edit ingredients, that he don't own)
+- Account system(basic user profile section)
+- Email Notifications
+- Send grocery list to email
+- Share your grocery list
+- CRUD Departments, Ingredients, Measurements, Recipes, Grocery Lists
+- Import data from Excel File
+- ACL, ACL for users(user cannot edit ingredients, that he don't own)
 
 ## List of Milestones
 
@@ -107,6 +109,8 @@ check account.md
 
 ## Sitemaps
 
+Also some data you can check at Sitemap-export.pdf file in repository root
+
 - Simple Subscription Flow
 ![Simple Subscription Flow](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/099a7735f717498faaa8731f55654fa7.png)
 
@@ -124,5 +128,3 @@ check account.md
 
 - Whole Structure of our project
 ![Whole Structure of our project](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/25c30222db7c453599438292bd469fc6.png)
-
-Also some data you can check at Sitemap-export.pdf file in repository root

@@ -38,20 +38,20 @@ Static data, aka json arrays will provided later, so you don't need to create it
 Homepage basic layout will be provided later.
 
 ## Important Notes
-- We'll use Sentry Releases to ship better code
-- We'll use git flow so we'll not intersect between developers
+- We'll use [Sentry Releases](https://docs.sentry.io/learn/releases/) to ship better code
+- We'll use [git-flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) so we'll not intersect between developers
 - We'll use PR for pushing your code into master and I'll be a reviewer
-- We'll use bin-flow
-- For making react components ready for cross-projects we'll use Bit.
-- We'll use Jest + Enzyme for tests
-- We'll use Netlify in order to have ability review our pages online
-- We'll use Travis CI for setting up tests coverage
+- We'll use [bin-flow](https://github.com/facebook/flow)
+- For making react components ready for cross-projects we'll use [Bit](https://bitsrc.io/).
+- We'll use [Jest + Enzyme for tests](https://facebook.github.io/jest/)
+- We'll use [Netlify](https://www.netlify.com/) in order to have ability review our pages online
+- We'll use [Travis CI](http://travis-ci.org) for setting up tests coverage
 - Send API calls to server. @TODO share with team an API endpoints. for making calls use Axious.
-- For subscription service we'll use Paddle.js
+- For subscription service we'll use [Paddle.js](https://paddle.com/docs/paddle-js-overlay-checkout/)
 
 - Each component should looks simple and understandable
-- We should use ReactStrap components for faster development process
-- You should create and maintain documentation
+- We should use [ReactStrap](https://reactstrap.github.io/) components for faster development process
+- You should create and maintain documentation [GitBook](https://www.gitbook.com/)
 
 
 ## Free Menu Release

@@ -1,5 +1,5 @@
 
-# Free Menu Release #
+# ChickenKyiv Free Menu Release #
 
 
 
@@ -12,7 +12,7 @@
 Method: GET
 Path: /api/menu/
 Input: JSON with properties ... @TODO finish it
-GET http://localhost:3000/api/menu?access_token=%token%
+GET http://localhost:3000/api/menu?access_token={token}
 
 
 ---
@@ -21,7 +21,7 @@ GET http://localhost:3000/api/menu?access_token=%token%
 Method: GET
 Path: /api/menu/{menu_id}
 Input: JSON with properties ...
-GET http://localhost:3000/api/menu/593ac56c2c941720bc3091b1?access_token=%token%
+GET http://localhost:3000/api/menu/{menu_id}?access_token={token}
 
 
 ---
@@ -30,7 +30,7 @@ GET http://localhost:3000/api/menu/593ac56c2c941720bc3091b1?access_token=%token%
 Method: GET
 Path: /api/menu/last
 Input: JSON with properties ...
-GET http://localhost:3000/api/menu/last?access_token=%token%
+GET http://localhost:3000/api/menu/last?access_token={token}
 
 
 ---
@@ -39,12 +39,14 @@ GET http://localhost:3000/api/menu/last?access_token=%token%
 Method: GET
 Path: /menu/filter/date
 Input: JSON with properties ...
+
 ---
 
 #### Get Menu with all data inside
 Method: GET
 Path: /menu/full
 Input: JSON with properties ...
+
 ---
 
 ### Recipes
@@ -52,7 +54,7 @@ Input: JSON with properties ...
 Method: GET
 Path: /api/recipe/
 Input: JSON with properties ...
-GET http://localhost:3000/api/recipe?access_token=%token%
+GET http://localhost:3000/api/recipe?access_token={token}
 
 
 ---
@@ -61,7 +63,7 @@ GET http://localhost:3000/api/recipe?access_token=%token%
 Method: GET
 Path: /api/recipe/{id}
 Input: JSON with properties ...
-GET http://localhost:3000/api/recipe/593abe383199170e50a5272d?access_token=%token%
+GET http://localhost:3000/api/recipe/{recipe_id}?access_token={token}
 
 
 
@@ -78,7 +80,7 @@ Method: GET
 Path: recipe/{id}/list/ingredients
 Input: JSON with properties ...
 
-http://localhost:3000/api/recipe/{id}/list/ingredients?recipeId=594d3b97fef8430a3c5eff8d&access_token=y2GcakK5pffy5LSueSdEQ8i40bkoSQixgZKMwImlyEsMLCrbk4ktjoV0OuxmnWNF
+http://localhost:3000/api/recipe/{id}/list/ingredients?recipeId={recipe_id}&access_token={token}
 ---
 
 #### Recipes_Find not sure if i test this URL before
@@ -93,7 +95,7 @@ http://localhost:3000/explorer/#!/recipes/recipes_find
 Method: GET
 Path: /api/grocery/menu?groceryId={groceryId}
 Input: JSON with properties ...
-GET http://localhost:3000/api/grocery/menu?groceryId=594d45227741a0312874c465&access_token=%token%
+GET http://localhost:3000/api/grocery/menu?groceryId={grocery_id}&access_token={token}
 ---
 
 
@@ -111,6 +113,7 @@ Input: JSON with properties ...
 http://localhost:3000/explorer/#!/customer/customer_login will return a token
 
 ---
+
 
 Worked URLs
 

@@ -10,15 +10,16 @@ class Calendar extends React.Component {
     constructor (props) {
         super(props);
         var today = new Date();
-        var y = today.getFullYear();
-        var m = today.getMonth();
-        var d = today.getDate();
+        var y     = today.getFullYear();
+        var m     = today.getMonth();
+        var d     = today.getDate();
+
         this.state = {
             editable: true,
             firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
             selectable: true,
             defaultView: 'month',
-            
+
             axisFormat: 'h:mm',
             columnFormat: {
                 month: 'ddd',    // Mon
@@ -79,9 +80,9 @@ class Calendar extends React.Component {
                         url: 'http://google.com/',
                         className: 'success'
                     }
-                ],	
+                ],
         }
-        
+
     }
 
     render() {

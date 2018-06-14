@@ -8,7 +8,6 @@ class TimeLine extends Component{
   }
 
   render() {
-    console.log(this.props.key)
     let { time } = this.props;
     return (
       <div className="time-line">

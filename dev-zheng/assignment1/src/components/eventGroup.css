@@ -1,7 +1,10 @@
 .event-group {
   width: 20%;
   float: left;
-  /* border: 1px solid #EAEAEA; */
+  height: 100vh;
+  /* border: 0.5px solid #EAEAEA; */
+  border-right: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
   margin-bottom: 0;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -30,4 +33,6 @@
 
 .events {
   position: relative;
+  margin-left: -1px;
+  /* margin-right: -1px; */
 }

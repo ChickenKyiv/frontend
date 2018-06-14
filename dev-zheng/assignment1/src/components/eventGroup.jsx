@@ -17,7 +17,7 @@ class EventGroup extends Component {
         </div>
         <div className="events">
           {
-            eventGroup.events.map(event => <Event event={ event }/>)
+            eventGroup.events.map((event, index) => <Event key={index} event={ event } openModal={this.props.openModal} groupIndex={this.props.index} eventIndex={index}/>)
           }
         </div>
       </div>

@@ -1,0 +1,14 @@
+.time-line {
+  height: 50px;
+  text-align: left;
+  position: relative;
+}
+
+.time-line hr {
+  position: absolute;
+  bottom: -1px;
+  margin: 0;
+  width: calc(100% - 60px);
+  left: 60px;
+  color: #EAEAEA;
+}

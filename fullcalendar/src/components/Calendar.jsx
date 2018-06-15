@@ -6,7 +6,7 @@ import Events from './Events'; //description Event static json data
 
 import "fullcalendar-reactwrapper/dist/css/fullcalendar.min.css";
 import "./Calendar.css";
- 
+
 
 class Calendar extends React.Component {
     constructor(props) {
@@ -17,83 +17,12 @@ class Calendar extends React.Component {
         var d     = today.getDate();
 
         this.state = {
-<<<<<<< HEAD
-            editable: true,
-            firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
-            selectable: true,
-            defaultView: 'month',
-
-            axisFormat: 'h:mm',
-            columnFormat: {
-                month: 'ddd',    // Mon
-                week: 'ddd d', // Mon 7
-                day: 'dddd M/d',  // Monday 9/7
-                agendaDay: 'dddd d'
-            },
-            titleFormat: {
-                month: 'MMMM yyyy', // September 2009
-                week: "MMMM yyyy", // September 2009
-                day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
-            },
-            allDaySlot: false,
-            selectHelper: true,
-            droppable: true,
-            events: [
-                    {
-                        title: 'All Day Event',
-                        start: new Date(y, m, 1)
-                    },
-                    {
-                        id: 999,
-                        title: 'Repeating Event',
-                        start: new Date(y, m, d-3, 16, 0),
-                        allDay: false,
-                        className: 'info'
-                    },
-                    {
-                        id: 999,
-                        title: 'Repeating Event',
-                        start: new Date(y, m, d+4, 16, 0),
-                        allDay: false,
-                        className: 'info'
-                    },
-                    {
-                        title: 'Meeting',
-                        start: new Date(y, m, d, 10, 30),
-                        allDay: false,
-                        className: 'important'
-                    },
-                    {
-                        title: 'Lunch',
-                        start: new Date(y, m, d, 12, 0),
-                        end: new Date(y, m, d, 14, 0),
-                        allDay: false,
-                        className: 'important'
-                    },
-                    {
-                        title: 'Birthday Party',
-                        start: new Date(y, m, d+1, 19, 0),
-                        end: new Date(y, m, d+1, 22, 30),
-                        allDay: false,
-                    },
-                    {
-                        title: 'Click for Google',
-                        start: new Date(y, m, 28),
-                        end: new Date(y, m, 29),
-                        url: 'http://google.com/',
-                        className: 'success'
-                    }
-                ],
-        }
-
-    }
-=======
 
         editable: true,
         firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
         selectable: true,
         defaultView: 'month',
-        
+
         axisFormat: 'h:mm',
         columnFormat: {
             month: 'ddd',    // Mon
@@ -135,9 +64,9 @@ class Calendar extends React.Component {
         }
         this.handleClick = this.handleClick.bind(this);
       }
-            
-            
-            
+
+
+
 
       componentDidMount () {
         this.handleClick();
@@ -152,16 +81,15 @@ class Calendar extends React.Component {
         }
       }
 /**************************** test Event handler******************** */
->>>>>>> 5c9217d6005edb0074f748e5831863b96fef3f95
 
       test() {
         let title = prompt('Event Title:');
       }
- /********************************************************************/    
+ /********************************************************************/
       render() {
         return (
             /******************************************************** */
-            <div onClick={this.test}> 
+            <div onClick={this.test}>
             {/*************************** test Event trigger **********/}
 
             <FullCalendar
@@ -199,7 +127,3 @@ class Calendar extends React.Component {
 
 
 export default Calendar;
-<<<<<<< HEAD
-=======
-
->>>>>>> 5c9217d6005edb0074f748e5831863b96fef3f95

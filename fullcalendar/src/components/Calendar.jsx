@@ -1,8 +1,6 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import FullCalendar from 'fullcalendar-reactwrapper';  // fullcalendar-reactwrapper.
-// import moment from 'moment';
 import Events from './Events'; //description Event static json data
 
 import "fullcalendar-reactwrapper/dist/css/fullcalendar.min.css";
@@ -16,30 +14,18 @@ class Calendar extends React.Component {
         this.jq = $.noConflict();
         this.state = {
             events: Events,
-            start: new Date(),
-            end: new Date(),
         };
         this.onEventSelect = this.onEventSelect.bind(this);
       }
-            
-      componentDidMount () {
-
-      }
-
-      componentWillReceiveProps(nextProps){
-       
-    }
 
 /***************************onSelect event handler****************** */
-    onEventSelect() {
+    onEventSelect(ev) {
         const events = this.state.events;
         const title = prompt('Event Title:');
-        const start = this.state.start;
-        const end = this.state.end;
         const newEventsSource = events.concat({
             title: title,
-            start: start,
-            end: end,
+            start: ev._d,
+            end: (ev.add(1,'days'))._d,
         });
         if (title) {
             this.setState({

@@ -1,8 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import FullCalendar from 'fullcalendar-reactwrapper';  // fullcalendar-reactwrapper.
-import moment from 'moment';
+// import moment from 'moment';
 import Events from './Events'; //description Event static json data
 
 import "fullcalendar-reactwrapper/dist/css/fullcalendar.min.css";

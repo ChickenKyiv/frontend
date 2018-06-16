@@ -1,11 +1,3 @@
-body {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 14px;
-  font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
-  background-color: #DDDDDD;
-}
-
 .App {
   text-align: center;
   margin: 0 auto;
@@ -17,11 +9,11 @@ body {
   margin-bottom: 30px;
 }
 
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 0.5s linear;
   height: 80px;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */

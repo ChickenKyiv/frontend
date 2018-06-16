@@ -2,125 +2,87 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import FullCalendar from 'fullcalendar-reactwrapper';  // fullcalendar-reactwrapper.
+import moment from 'moment';
 import Events from './Events'; //description Event static json data
 
 import "fullcalendar-reactwrapper/dist/css/fullcalendar.min.css";
 import "./Calendar.css";
+import "./Custom.css";
  
 
 class Calendar extends React.Component {
     constructor(props) {
         super(props);
-        var today = new Date();
-        var y     = today.getFullYear();
-        var m     = today.getMonth();
-        var d     = today.getDate();
-
+        this.jq = $.noConflict();
         this.state = {
-
-        editable: true,
-        firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
-        selectable: true,
-        defaultView: 'month',
-        
-        axisFormat: 'h:mm',
-        columnFormat: {
-            month: 'ddd',    // Mon
-            week: 'ddd d', // Mon 7
-            day: 'dddd M/d',  // Monday 9/7
-            agendaDay: 'dddd d'
-        },
-        titleFormat: {
-            month: 'MMMM yyyy', // September 2009
-            week: "MMMM yyyy", // September 2009
-            day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
-        },
-        allDaySlot: false,
-        selectHelper: true,
-        droppable: true,
-        events: Events,
-        allDaySlot: false,
-        selectHelper: true,
-        droppable: true,
-        selectable: true,
-        editable: true,
-        firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
-        defaultView: 'month',
-        axisFormat: 'h:mm',
-        columnFormat: {
-            month: 'ddd',    // Mon
-            week: 'ddd d', // Mon 7
-            day: 'dddd M/d',  // Monday 9/7
-            agendaDay: 'dddd d'
-        },
-        titleFormat: {
-            month: 'MMMM yyyy', // September 2009
-            week: "MMMM yyyy", // September 2009
-            day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
-        },
-        allDaySlot: false,
-        selectHelper: true,
-        droppable: true,
-        }
-        this.handleClick = this.handleClick.bind(this);
+            events: Events,
+            start: new Date(),
+            end: new Date(),
+        };
+        this.onEventSelect = this.onEventSelect.bind(this);
       }
             
-            
-            
-
       componentDidMount () {
-        this.handleClick();
+
       }
+
+      componentWillReceiveProps(nextProps){
+       
+    }
+
 /***************************onSelect event handler****************** */
-      handleClick() {
-        let title = prompt('Event Title:');
+    onEventSelect() {
+        const events = this.state.events;
+        const title = prompt('Event Title:');
+        const start = this.state.start;
+        const end = this.state.end;
+        const newEventsSource = events.concat({
+            title: title,
+            start: start,
+            end: end,
+        });
         if (title) {
             this.setState({
-                title: title,
+                events: newEventsSource,
             });
         }
       }
-/**************************** test Event handler******************** */
 
-      test() {
-        let title = prompt('Event Title:');
-      }
- /********************************************************************/    
+      onDropEventSelect () { 
+       
+        
+    }
+
       render() {
+        const option = {
+            header: {
+                left: 'title',
+                center: 'basicDay,basicWeek,month',
+                right: 'prev,next today myCustomButton',
+            },
+            defaultView: 'month',
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            selectable: true,
+            droppable: true,
+            events: this.state.events,
+            firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
+            axisFormat: 'h:mm',
+            allDaySlot: true,
+            selectHelper: true,
+            select: this.onEventSelect,
+            drop: this.onDropEventSelect,
+            start: this.state.start,
+            end: this.state.end,
+             
+        }
         return (
-            /******************************************************** */
-            <div onClick={this.test}> 
-            {/*************************** test Event trigger **********/}
 
             <FullCalendar
                  id = "calendar"
-                header = {{
-                    left: 'title',
-                    center: 'month,basicWeek,basicDay',
-                    right: 'prev,next today myCustomButton',
-                }}
-                defaultDate={'2017-09-12'}
-                navLinks= {true} // can click day/week names to navigate views
-                editable= {true}
-                eventLimit= {true} // allow "more" link when too many events
-                events = {this.state.events}
-                selectable
-                droppable
-                /********************************************************************** */
-                /*************************** this drop and select Event doesn't happen **/
-                //  onSelect = {this.handleClick}
-                //  onDrop= {function() {
-                //     // is the "remove after drop" checkbox checked?
-                //     if ($('#drop-remove').is(':checked')) {      //////////// How to deal jquery syntax like $('#drop-remove')?
-                //         // if so, remove the element from the "Draggable Events" list
-                //         $(this).remove();
-                //     }
-                // }}
-                /************************************************************************ */
-                /** In the Fullcalendar component, any event does not happen.             */
-                /************************************************************************ */
+               {...option}
             />
-            </div>
         );
     }
 }

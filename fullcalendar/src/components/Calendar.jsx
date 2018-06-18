@@ -6,7 +6,7 @@ import Events from './Events'; //description Event static json data
 import "fullcalendar-reactwrapper/dist/css/fullcalendar.min.css";
 import "./Calendar.css";
 import "./Custom.css";
- 
+
 
 class Calendar extends React.Component {
     constructor(props) {
@@ -25,8 +25,9 @@ class Calendar extends React.Component {
         const newEventsSource = events.concat({
             title: title,
             start: ev._d,
-            end: (ev.add(1,'days'))._d,
+            end : (ev.add(1,'days'))._d,
         });
+
         if (title) {
             this.setState({
                 events: newEventsSource,
@@ -34,11 +35,14 @@ class Calendar extends React.Component {
         }
       }
 
-      onDropEventSelect () { 
-       
-        
-    }
+      onDropEventSelect () {
 
+
+      }
+      // @TODO move basic options into a separated file/module/array that we'll include into this component
+      // @TODO each component should have his own folder. Structure, like
+      // /Calendar/Calendar.jsx, /Calendar/Calendar.scss, /Calendar/Calendar.test.js
+      // @TODO deploy this branch to Netlify later
       render() {
         const option = {
             header: {
@@ -61,7 +65,7 @@ class Calendar extends React.Component {
             drop: this.onDropEventSelect,
             start: this.state.start,
             end: this.state.end,
-             
+
         }
         return (
 

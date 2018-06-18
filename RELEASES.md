@@ -19,7 +19,9 @@ Once the project moves into development, the press release can be used as a touc
 ## Releases list
 
 - [Release #0]()
-- [here]()
-- [here]()
-- [here]()
-- [here]()
+- [Release #0]()
+- [Release #0]()
+- [Release #0]()
+- [Release #0]()
+- [Release #0]()
+- [Release #0]()

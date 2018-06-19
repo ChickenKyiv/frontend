@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo       from './logo.svg';
-import TimeLine   from './components/timeline/timeline.jsx';
-import EventGroup from './components/events/eventGroup.jsx';
-import EventModal from './components/common/eventModal.jsx';
-import { timelines, events } from './data.js';
+import logo       from '../../assets/logo.svg';
+import TimeLine   from '../timeline/timeline.jsx';
+import EventGroup from '../events/eventGroup.jsx';
+import EventModal from '../common/eventModal.jsx';
+import { timelines, events } from '../../data/data.js';
 import './App.css';
 
 let groupIndex = undefined, eventIndex = undefined;

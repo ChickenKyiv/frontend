@@ -3,10 +3,6 @@ import Event from './event.jsx';
 import './eventGroup.css';
 
 class EventGroup extends Component {
-  constructor(props){
-  	super(props);
-  }
-
   render() {
     let { eventGroup } = this.props;
 

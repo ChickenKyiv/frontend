@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import Modal from 'react-responsive-modal';
 
 class EventModal extends Component {
-  constructor(props){
-  	super(props);
-  }
-
   render() {
     let { isOpen, eventData, onCloseEventModal } = this.props;
     return (

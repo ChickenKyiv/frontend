@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './timeline.css';
 
 class TimeLine extends Component{
-  constructor(props){
-  	super(props);
-
-  }
-
   render() {
     let { time } = this.props;
     return (

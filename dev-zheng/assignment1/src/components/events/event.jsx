@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './event.css';
 
 class Event extends Component {
-  constructor(props){
-  	super(props);
-  }
-
   getStyle() {
     let { top, height } = this.calculateBorder();
 
@@ -23,8 +19,8 @@ class Event extends Component {
 
   calculateBorder() {
     let { start_time, end_time } = this.props.event;
-    let start = 100 * ((parseInt(start_time.split(':')[0])-9) +  (parseInt(start_time.split(':')[1])/60.0));
-    let end   = 100 * ((parseInt(end_time.split(':')[0])-9) +  (parseInt(end_time.split(':')[1])/60.0));
+    let start = 100 * ((parseInt(start_time.split(':')[0], 10)-9) +  (parseInt(start_time.split(':')[1], 10)/60.0));
+    let end   = 100 * ((parseInt(end_time.split(':')[0], 10)-9) +  (parseInt(end_time.split(':')[1], 10)/60.0));
     return { top: start, height: end-start };
   }
 
@@ -33,7 +29,6 @@ class Event extends Component {
   }
 
   render() {
-    let { event } = this.props;
     return (
       <div className="event" style={this.getStyle()} onClick={() => this.openModal()}>
         <div className="event-content">

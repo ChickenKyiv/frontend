@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo       from '../../assets/logo.svg';
 import TimeLine   from '../timeline/timeline.jsx';
 import EventGroup from '../events/eventGroup.jsx';
 import EventModal from '../common/eventModal.jsx';

@@ -24,8 +24,8 @@ class Event extends Component {
   calculateBorder() {
     let { start_time, end_time } = this.props.event;
     let start = 100 * ((parseInt(start_time.split(':')[0])-9) +  (parseInt(start_time.split(':')[1])/60.0));
-    let end = 100 * ((parseInt(end_time.split(':')[0])-9) +  (parseInt(end_time.split(':')[1])/60.0));
-    return {top: start, height: end-start};
+    let end   = 100 * ((parseInt(end_time.split(':')[0])-9) +  (parseInt(end_time.split(':')[1])/60.0));
+    return { top: start, height: end-start };
   }
 
   openModal() {
@@ -37,8 +37,12 @@ class Event extends Component {
     return (
       <div className="event" style={this.getStyle()} onClick={() => this.openModal()}>
         <div className="event-content">
-          <span className="event-date">{this.props.event.start_time} - {this.props.event.start_time}</span>
-          <span className="event-name">{this.props.event.name}</span>
+          <span className="event-date">
+            {this.props.event.start_time} - {this.props.event.start_time}
+          </span>
+          <span className="event-name">
+            {this.props.event.name}
+          </span>
         </div>
       </div>
     )

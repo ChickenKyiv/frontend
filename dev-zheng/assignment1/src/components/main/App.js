@@ -6,6 +6,7 @@ import { timelines, events } from '../../data/data.js';
 import './App.css';
 
 let groupIndex = undefined, eventIndex = undefined;
+
 class App extends Component {
   constructor(props){
   	super(props);
@@ -28,7 +29,10 @@ class App extends Component {
     return (
       <div className="App">
         {
-          (groupIndex !== undefined && eventIndex !== undefined && this.state.isOpen) && <EventModal isOpen={this.state.isOpen} eventData={ events[groupIndex]['events'][eventIndex] } onCloseEventModal={this.onCloseEventModal} />
+          (groupIndex !== undefined &&
+            eventIndex !== undefined &&
+            this.state.isOpen
+          ) && <EventModal isOpen={this.state.isOpen} eventData={ events[groupIndex]['events'][eventIndex] } onCloseEventModal={this.onCloseEventModal} />
         }
         <div className="time-lines">
           {

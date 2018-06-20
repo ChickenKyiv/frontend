@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
+import React, {
+  Component
+} from 'react';
 import './timeline.css';
 
-class TimeLine extends Component{
+class TimeLine extends Component {
+  
   render() {
     let { time } = this.props;
     return (

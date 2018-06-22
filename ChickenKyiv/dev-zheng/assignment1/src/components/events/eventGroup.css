@@ -1,0 +1,38 @@
+.event-group {
+  width: 20%;
+  float: left;
+  height: 100vh;
+  /* border: 0.5px solid #EAEAEA; */
+  border-right: 1px solid #EAEAEA;
+  border-top: 1px solid #EAEAEA;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.event-group-header {
+  display: table;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #EAEAEA;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.event-group-header span {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 .5em;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.events {
+  position: relative;
+  margin-left: -1px;
+  /* margin-right: -1px; */
+}

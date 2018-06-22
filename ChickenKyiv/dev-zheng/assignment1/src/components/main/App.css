@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  width: 70%;
+  margin: 2em auto;
+  position: relative;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.time-lines {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.events-block {
+  float: left;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+  margin-top: -1px;
+  border-left: 1px solid #EAEAEA;
+}
+
+.event-modal {
+  width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.event-info {
+  color: white;
+  width: 28%;
+  padding: 1.2rem
+}
+
+.event-info p {
+  font-size: 1.4rem;
+}
+
+.event-description {
+  display: flex;
+  width: 60%;
+  padding: 3rem;
+}
+
+.event-description span {
+  line-height: 1.5rem;
+}
+
+.styles_modal__gNwvD {
+  padding: 0
+}

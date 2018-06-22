@@ -1,16 +1,14 @@
-import React, {
-  Component
-} from 'react';
+import React, { Component } from 'react';
+import { timelines } from '../../data/data.js';
 import './timeline.css';
 
 class TimeLine extends Component {
-  
+
   render() {
-    let { time } = this.props;
     return (
       <div className="time-line">
         {
-          this.props.index % 2 === 0 && <span className="time">{ time }</span>
+          this.props.index % 2 === 0 && <span className="time">{ timelines[this.props.index] }</span>
         }
         <hr/>
       </div>

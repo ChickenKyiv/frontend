@@ -36,7 +36,7 @@ class App extends Component {
         }
         <div className="time-lines">
           {
-            timelines.map((timeline, index) => <TimeLine time={ timeline } key={ index } index={ index } />)
+            timelines.map((timeline, index) => <TimeLine key={ index } index={ index } />)
           }
         </div>
         <div className="events-block">

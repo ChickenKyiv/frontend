@@ -3,6 +3,13 @@ import Event from './event.jsx';
 import './eventGroup.css';
 
 class EventGroup extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      isOpen: false
+    };
+  }
+
   render() {
     let { eventGroup } = this.props;
 

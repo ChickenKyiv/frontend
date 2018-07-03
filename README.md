@@ -7,8 +7,8 @@ CK is a short name for ChickenKyiv Project.
 
 Main Idea to replicate nomoretogo.com & planitdinner.net websites functionality by using newest technologies.
 You can see how this similar project looks on this videos
-https://www.youtube.com/watch?v=mZOuQEhuT6Y&t=1s
-https://www.youtube.com/watch?v=nScWVGSTAaI
+- https://www.youtube.com/watch?v=mZOuQEhuT6Y&t=1s
+- https://www.youtube.com/watch?v=nScWVGSTAaI
 
 
 ## List of Milestones

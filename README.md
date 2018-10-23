@@ -158,19 +158,19 @@ check account.md
 Also some data you can check at Sitemap-export.pdf file in repository root
 
 - Simple Subscription Flow
-![Simple Subscription Flow](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/099a7735f717498faaa8731f55654fa7.png)
+![Simple Subscription Flow](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/SubscriptionsSitemap.png)
 
 - Simple Structure of Recipe component
-![Simple Structure of Recipe component](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/25c30222db7c453599438292bd469fc6.png)
+![Simple Structure of Recipe component](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/RecipeBasicSchema.png)
 
 - Simple sitemap for pages
-![Simple sitemap for pages](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/b9e3a0b6e8444c6f86a99342ae90030f.png)
+![Simple sitemap for pages](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/PagesSitemap.png)
 
-- Free menu relese structure
-![Free menu relese structure](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/c0ae724e5d2a4635ab5994821ac88e95.png)
+- Free menu release structure
+![Free menu release structure](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/FreeMenuPagesSection.png)
 
 - Release 0 of our project(pages/components
-![Release 0 of our project(pages/components)](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/b33e2daee0cb4c1e9f27c4fc3399ff0d.png)
+![Release 0 of our project(pages/components)](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/CKFreeMenuReleaseSchema.png)
 
 - Whole Structure of our project
-![Whole Structure of our project](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/25c30222db7c453599438292bd469fc6.png)
+![Whole Structure of our project](https://github.com/ChickenKyiv/creative/blob/master/schemes-sitemaps/RecipeAppFullSchema.png)

@@ -51,7 +51,7 @@ Homepage basic layout will be provided later.
 
 - Each component should looks simple and understandable
 - We should use [ReactStrap](https://reactstrap.github.io/) components for faster development process
-- You should create and maintain documentation [GitBook](https://www.gitbook.com/)
+
 
 
 ## Free Menu Release
